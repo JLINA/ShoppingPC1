@@ -1,0 +1,200 @@
+*{
+	 margin: 0;
+	 padding: 0;
+}
+body,html{
+	 font-size: 12px;
+	 padding:0 2rem 0 2rem;
+	 background:lavender;
+}
+/*当是手机屏幕时调整大小*/
+@media screen and (max-width: 768px){
+		body,html{
+		    font-size: 6px;
+		    padding: 0;
+	    }
+}
+a{
+	 text-decoration: none;
+	 color: black;
+}
+li{
+	 list-style: none;
+}
+/*222222222222222222222222header.html222222222222222222*/
+/*-----------------头部的第一个section-------------*/
+.box1{
+	height:4rem;		
+	/*padding: 10px;*/
+	/*弹性盒子*/
+	display: -webkit-box;
+	background: lightgray;
+}
+.box1 a{
+	height:4rem;
+	line-height: 4rem;
+	text-align: center;	
+    background: lightgray;
+	border: 1px solid #fff;
+	display:block;
+	font-size: 1.2rem;
+}
+.box1 a:nth-child(1){
+			-webkit-box-flex:20;
+			text-align:left ;	
+		}
+		.box1 a{
+			-webkit-box-flex:2;	
+		}
+/*-------------------头部的第二个section-------------------*/
+.box2{
+	  height: 3rem;
+	  display: -webkit-box;
+	  padding: 2rem 0;
+	  background: white;
+}
+.box2 .logo1,.box2 .logo2{
+	  -webkit-box-flex:2;
+	  display: block;	
+}
+.box2 form{
+	  -webkit-box-flex:6;	
+	  border: 2px solid red;
+	  display: block;	
+	  display: -webkit-box;  
+	  line-height: 3rem;
+	  text-align: center;
+	  font-size: 1.5rem;
+	  color: white;
+	  background: red;	  
+}
+.box2 input{
+	  -webkit-box-flex:7;	
+	  display: block;	
+}
+.box2 span{
+	  -webkit-box-flex:3;	
+	  display: block;	
+}
+.box2 .logo2{
+	  text-align: right;
+}
+/*333333333333333333333main.html33333333333333333333333*/
+.main1{
+	/*height: 3rem;*/
+	display: -webkit-box;
+	font-size: 1.5rem;
+}
+/*----------------三大栏  导航  轮播图  登录注册  二级菜单----------------*/
+/*二级菜单弹出框的样式布局*/
+.mainnav2{
+	position: absolute;
+	top: 11rem;
+	left: 19%;
+	width: 58rem;
+	height: 40rem;
+	background:palegreen;
+	display: -webkit-box;
+	padding: 0.8rem;
+}
+.mainnav2_1{
+	-webkit-box-flex: 7;
+	background: white;
+	border-right: 2px dashed #AAAAAA;
+}
+.mainnav2_2{
+	-webkit-box-flex: 3;
+	background: pink;
+}
+/*二级菜单弹出框里的文字框样式*/
+.mainnav2_1_dl{
+	display: -webkit-box;
+	-webkit-box-orient:vertical ;
+	/*border: 1px solid red;*/
+    height: 13rem;
+    padding:0 2rem;
+}
+.mainnav2_1_dl dt{
+	-webkit-box-flex:1;
+    border-bottom:2px solid #D1D3D6;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding-top: 2rem;
+}
+.mainnav2_1_dl dt a:nth-child(2){
+	float: right;
+}
+.mainnav2_1_dl dd{
+	-webkit-box-flex:7;	
+}
+.mainnav2_1_dl dd a{
+	margin-left: 1rem;
+}
+/**/
+.main1 .main1box1{
+   -webkit-box-flex: 3;
+   border: 1px solid red;
+   background:rgb(255,101,55);
+}
+.main1 .main1box2{
+   -webkit-box-flex: 7;
+   padding: 1rem;
+   /*border: 1px solid yellow;*/
+}
+.main1 .main1box3{
+   -webkit-box-flex: 3;
+   border: 1px solid pink;
+   background: white;
+}
+
+
+/*-------------------导航栏里面的---------------*/
+/*让每一栏都居中*/
+.main1 .main1box1 div{
+   font-size: 1.2rem;
+   text-align:center;
+   padding-bottom: 1rem;
+}
+/*--------------------轮播图里面内容----------------*/
+/*轮播图里面内容上面的*/
+.main1 .main1box2 section:nth-child(1){
+	width: 100%;
+	display: -webkit-box;
+}
+.main1 .main1box2 section:nth-child(1) div:nth-child(1){
+   -webkit-box-flex: 6;	
+   background: palegoldenrod;
+}
+.main1 .main1box2 section:nth-child(1) div:nth-child(2){
+   -webkit-box-flex: 3;	
+   background: palegreen;
+}
+/*轮播图里面内容下面的*/
+.main1 .main1box2 section:nth-child(2){
+	width: 100%;
+	display: -webkit-box;
+}
+.main1 .main1box2 section:nth-child(2) div:nth-child(1){
+   -webkit-box-flex: 6;	
+   background: pink;
+}
+.main1 .main1box2 section:nth-child(2) div:nth-child(2){
+   -webkit-box-flex: 3;	
+   background: springgreen;
+}
+/*----------------登录注册里的内容----------------*/
+.main1 .main1box3 div:nth-child(1) img,.main1 .main1box3 div:nth-child(1) p{
+   position:relative;
+   left: 50%;
+   top: 0%;
+   transform: translate(-50%,0%);
+   text-align: center;
+   padding-top: 1rem;
+}
+.main1 .main1box3 div:nth-child(1) a{
+   background:rgb(255,68,0);
+   color: white;
+   font-size: 1.8rem;
+   padding: 0.5rem;
+}
+

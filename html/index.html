@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+		<title></title>
+	</head>
+	<link rel="stylesheet" type="text/css" href="../css/base.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/common.css"/>
+	<link rel="stylesheet" href="../css/main.css"/>
+	<!--<script src="../js/base/jquery-1.12.3.js" type="text/javascript" charset="utf-8"></script>-->
+	<!--<script src="../js/base/common.js" type="text/javascript" charset="utf-8"></script>-->
+	<body>
+		   <!--头部-->
+		   <div id="header"></div>
+		   <!--主页的主体-->
+		   <div id="main"></div>
+	
+	<script src="../js/base/jquery-1.12.3.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../js/base/common.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+//          $.ajax({
+//          	type:"get",
+//          	url:"../js/json/goodlist.json",
+//          	async:true
+//          }).success(function(res){
+//          	    console.log(res);
+//          });
+    	    loadHtml("header.html","header");
+    	    loadHtml("main.html","main");
+    </script>
+	</body>
+</html>
